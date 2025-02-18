@@ -1,0 +1,23 @@
+@use "../../styles/mixins.scss" as *;
+
+.navbarre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:  10px 20px;
+    }
+    
+.navLinks{
+        display: flex;
+        gap:50px;
+    }
+
+.navLink {
+        @include font-style-primary(24px, 500);
+    }
+    
+.active {
+        @extend .navLink;
+        text-decoration: underline;
+    }
+    

@@ -1,4 +1,4 @@
-import './Home.scss'
+import styles from "./Home.module.scss";
 import Card from '../../components/Card/Card.jsx'
 
 function Home() {

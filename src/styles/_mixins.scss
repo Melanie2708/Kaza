@@ -1,0 +1,15 @@
+@use "./variables.scss" as *;
+
+@mixin font-style-primary($size, $weight) {
+    font-family: $font-primary;
+    font-size: $size;
+    font-weight: $weight;
+    color: $text-color-primary;
+}
+
+@mixin font-style-title($size, $weight) {
+    font-family: $font-primary;
+    font-size: $size;
+    font-weight: $weight;
+    color: $text-color-title;
+}

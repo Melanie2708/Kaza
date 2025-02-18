@@ -1,11 +1,20 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom";
+import styles from "./Header.module.scss";
+import logo from "../../assets/logo.png";
 
 function Header() {
   return (
-    <nav>
-        <Link to="/">Accueil</Link>
-        <Link to="/about">A Propos</Link>
-    </nav>
+    <div className={styles.navbarre}>
+      <img src={logo}/>
+      <nav className={styles.navLinks}>
+      <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : styles.navLink)}>
+          Accueil
+        </NavLink>
+        <NavLink to="/about" className={({ isActive }) => (isActive ? styles.active : styles.navLink)}>
+          A Propos
+        </NavLink>
+        </nav>
+    </div>
   )
 }
 

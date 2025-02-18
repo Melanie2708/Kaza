@@ -1,0 +1,15 @@
+@use "../../styles/mixins.scss" as *;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 209px;
+    gap: 40px;
+}
+
+.copyright {
+    @include font-style-title(24px, 500);
+}
