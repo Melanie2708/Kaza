@@ -8,12 +8,14 @@ import PageNotFound from "../../pages/PageNotFound/PageNotFound.jsx";
 const AppRouter = () => {
   return (
     <Router>
+      <main>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
+      </main>
       <Footer />
     </Router>
   );

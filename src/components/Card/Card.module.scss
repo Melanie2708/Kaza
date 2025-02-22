@@ -1,0 +1,19 @@
+@use "../../styles/mixins.scss" as*;
+
+.cards {
+    width: 340px;
+    height: 340px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 25px;
+    cursor: pointer;
+    background-size: cover;   
+    background-position: center; 
+}
+
+.title {
+    @include font-style-title(18px, 700);
+    margin: 20px;
+}

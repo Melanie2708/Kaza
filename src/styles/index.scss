@@ -1,8 +1,13 @@
 @use "./_globals.scss";
 
-#root {
-  max-width: 1240px;
-  margin: 0 auto;
-  padding: 30px 100px 30px 100px;
+
+body{
+  margin: 0;
+  padding: 0;
 }
+main {
+  width: 1240px;
+    margin: 0 auto;
+    padding: 30px 100px 30px 100px
+  }
 

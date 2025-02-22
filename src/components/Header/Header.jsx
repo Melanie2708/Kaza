@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png";
 function Header() {
   return (
     <div className={styles.navbarre}>
-      <img src={logo}/>
+      <img src={logo} alt="logo"/>
       <nav className={styles.navLinks}>
       <NavLink to="/" className={({ isActive }) => (isActive ? styles.active : styles.navLink)}>
           Accueil
