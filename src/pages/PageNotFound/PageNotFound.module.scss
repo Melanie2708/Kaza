@@ -1,0 +1,23 @@
+@use "../../styles/mixins.scss" as *;
+
+.page{
+    text-align: center;
+    
+}
+
+.erreur{
+    @include font-style-primary(288px, 700);
+    color: #ff6060;
+    padding-bottom: 70px;
+}
+
+p{
+    @include font-style-primary(36px, 500);
+    color: #ff6060;
+    padding-bottom: 70px;
+}
+
+.retour{
+    @include font-style-primary(18px, 500);
+    padding-bottom: 70px;
+}
