@@ -8,7 +8,7 @@ import listelogements from "../../../data/logements.json";
 function Home() {
   return (
     <div>
-      <Banner/>
+      <Banner text={"Chez vous, partout et ailleurs"} image={"src/assets/imageBanner.png"}/>
       <div className={styles.fondGris}>
       <ul>
         {listelogements.map((logement)=>(

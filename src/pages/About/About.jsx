@@ -1,11 +1,12 @@
 import styles from "./About.module.scss";
+import Banner from "../../components/Banner/Banner.jsx";
 
 function About() {
     return (
       <div>
-        <h1>A propos</h1>
+        <Banner image={"src/assets/imageBannerApropos.png"}/>
       </div>
-    )
+  )
   }
   
   export default About

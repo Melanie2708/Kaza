@@ -11,7 +11,7 @@
     padding-bottom: 70px;
 }
 
-p{
+.message{
     @include font-style-primary(36px, 500);
     color: #ff6060;
     padding-bottom: 70px;
@@ -20,4 +20,5 @@ p{
 .retour{
     @include font-style-primary(18px, 500);
     padding-bottom: 70px;
+    text-decoration: underline;
 }
