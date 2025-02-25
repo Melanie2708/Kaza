@@ -13,7 +13,7 @@
     }
 
 .navLink {
-        @include font-style-primary(24px, 500);
+        @include font-style(24px, 500);
     }
     
 .active {
