@@ -18,7 +18,7 @@
 }
 
 .retour{
-    @include font-style-primary(18px, 500);
+    @include font-style(18px, 500);
     padding-bottom: 70px;
     text-decoration: underline;
 }

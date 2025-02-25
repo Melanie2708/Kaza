@@ -4,6 +4,7 @@ import About from "../../pages/About/About.jsx";
 import Header from "../Header/Header.jsx";
 import Footer from "../Footer/Footer.jsx";
 import PageNotFound from "../../pages/PageNotFound/PageNotFound.jsx";
+import Logement from "../../pages/Logement/Logement.jsx";
 
 const AppRouter = () => {
   return (
@@ -13,6 +14,7 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/logement" element={<Logement/>}/>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
       </main>
