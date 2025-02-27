@@ -1,6 +1,49 @@
 @use "../../styles/mixins.scss" as *;
 @use "../../styles/variables.scss" as *;
 
-.slideShow {
-    height: 415px;
+.contenu{
+    height: 643px;
+}
+
+.slideshow {
+   height: 415px;
 }  
+
+.infos {
+    //display: flex;
+    //justify-content: space-between;
+    //margin-bottom: 25px;
+}
+      
+.title {
+   @include font-style-primary(36px, 500);
+    margin-bottom: 5px;
+    margin-top: 20px;
+  }
+  
+  .location {
+    @include font-style(18px, 500);
+  }
+
+.tags{
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    @include font-style-secondary(14px, 700);
+  
+}
+
+.tag{
+    width: 115px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.hostAndRating{}
+.host{}
+.hostName{}
+.hostPicture{}
