@@ -44,7 +44,9 @@
 }
 
 .currentIndex{
+  position:absolute;
+  top: 87%;
+  left: 48%;
   @include font-style-secondary (18px, 500);
   text-align: center;
-  
 }

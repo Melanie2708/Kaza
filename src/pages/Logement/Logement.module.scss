@@ -1,49 +1,84 @@
 @use "../../styles/mixins.scss" as *;
 @use "../../styles/variables.scss" as *;
 
-.contenu{
-    height: 643px;
-}
-
 .slideshow {
-   height: 415px;
+  height: 415px;
 }  
 
-.infos {
-    //display: flex;
-    //justify-content: space-between;
-    //margin-bottom: 25px;
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
 }
-      
+
 .title {
-   @include font-style-primary(36px, 500);
-    margin-bottom: 5px;
-    margin-top: 20px;
+  @include font-style-primary(36px, 500);
+  margin-bottom: 5px;
+  margin-top: 20px;
   }
   
-  .location {
-    @include font-style(18px, 500);
+.location {
+  @include font-style(18px, 500);
   }
 
 .tags{
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
-    @include font-style-secondary(14px, 700);
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  @include font-style-secondary(14px, 700);
   
 }
 
 .tag{
-    width: 115px;
-    height: 25px;
-    border-radius: 10px;
-    background-color: $color-primary;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 5px 30px 5px 30px;
 }
 
-.hostAndRating{}
-.host{}
-.hostName{}
-.hostPicture{}
+.hostAndRating{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+.host{
+  display: flex;
+  margin-top: 20px;
+}
+.hostName{
+  @include font-style-primary (18px, 500);
+}
+.hostPicture{
+  height: 64px;
+  width: 64px;
+  border-radius: 50px;
+}
+.rating{
+  display: flex;
+}
+
+.star {
+  width: 36px;
+  height: 36px;
+  font-size: 24px;
+  color: #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+
+.starFilled {
+  @extend .star;
+  color: $color-primary;
+}
+
+.collapses{
+display: flex;
+gap:76px
+}
