@@ -1,19 +1,22 @@
 .fondGris {
-    width: 1240px;
-    background-color: #F6F6F6;
-    border-radius: 25px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+  width: 1240px;
+  background-color: #F6F6F6;
+  border-radius: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
     
     
 
-    ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        padding: 0px;
-        margin: 0px;
-        justify-items: center;
-      }
-    
+ul {
+  display: flex;
+  flex-wrap: wrap;
+   //grid-template-columns: repeat(3, 1fr);
+  //padding: 0px;
+  //margin: 0px;
+  //justify-items: center;
+  padding-left: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  }    
 }
 
