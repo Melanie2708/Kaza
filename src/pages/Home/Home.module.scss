@@ -1,5 +1,5 @@
 .fondGris {
-  width: 1240px;
+  max-width: 1240px;
   background-color: #F6F6F6;
   border-radius: 25px;
   margin-top: 30px;
@@ -20,3 +20,17 @@ ul {
   }    
 }
 
+/**Media queries**/
+@media (max-width: 767.98px){
+  .fondGris{
+    max-width: 767.98px;
+    background-color: white;
+
+
+
+    ul{
+      padding-left: 0px;
+      padding-top: 0px;
+      padding-bottom: 0px;}
+  }
+}

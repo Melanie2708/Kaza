@@ -6,7 +6,7 @@
   align-items: center;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
-  width: 1240px;
+  max-width: 1240px;
   height: 223px;
   background-size: cover; 
   background-position: center; // Centre l'image
@@ -17,4 +17,19 @@
 
 .texte{
   @include font-style-secondary(48px, 700);
+}
+
+/**Media queries**/
+@media (max-width: 767.98px){
+  
+  .banner{
+    max-width: 767.98px;
+    height: 111px;
+    padding-left: 20px
+  }
+  .texte{
+    @include font-style-secondary(24px, 700);
+    white-space: normal;
+  }
+  
 }

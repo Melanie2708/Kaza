@@ -17,3 +17,12 @@
     @include font-style-secondary(18px, 700);
     margin: 20px;
 }
+
+/**Media queries**/
+@media (max-width: 767.98px){
+    .cards{
+        height: 255px;
+        margin:0px;
+        margin-bottom: 22px;
+    }
+}

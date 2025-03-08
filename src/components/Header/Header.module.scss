@@ -20,4 +20,21 @@
         @extend .navLink;
         text-decoration: underline;
     }
+
+/**Media queries**/
+@media (max-width: 767.98px){
+    img{
+        width:145px;
+        height:46,88px;
+    }
+
+    .navLink {
+        @include font-style(12px, 500);
+        text-transform: uppercase ;
+    }
+
+    .navLinks{
+        gap:25px;
+    }
+}
     

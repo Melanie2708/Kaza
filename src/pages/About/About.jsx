@@ -3,10 +3,10 @@ import Banner from "../../components/Banner/Banner.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 
 function About() {
-    return (
-      <div>
-        <Banner image={"src/assets/imageBannerApropos.png"}/>  
-        <div className={styles.collapseContainer}>
+  return (
+    <div>
+      <Banner image={"src/assets/imageBannerApropos.png"} />
+      <div className={styles.collapseContainer}>
         <Collapse
           title={"Fiabilité"}
           content={
@@ -39,6 +39,5 @@ function About() {
     </div>
   );
 }
-  
-  export default About
-  
+
+export default About;
