@@ -21,11 +21,15 @@
 
 /**Media queries**/
 @media (max-width: 767.98px){
+    .main {
+        gap: 10px;
+    }
     .img{
         width: 122px;
         height: 39.44px;
     }
     .copyright {
         @include font-style-secondary(12px, 500);
+        width: 100px;
     }
 }

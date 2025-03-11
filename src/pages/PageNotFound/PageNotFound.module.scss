@@ -1,24 +1,45 @@
 @use "../../styles/mixins.scss" as *;
 
 .page{
-    text-align: center;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    gap: 80px;
 }
 
 .erreur{
     @include font-style-primary(288px, 700);
     color: #ff6060;
-    padding-bottom: 70px;
 }
 
 .message{
     @include font-style-primary(36px, 500);
     color: #ff6060;
-    padding-bottom: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    vertical-align: bottom;
 }
 
 .retour{
     @include font-style(18px, 500);
-    padding-bottom: 70px;
     text-decoration: underline;
+}
+
+/**Media queries**/
+@media (max-width: 767.98px){
+    .erreur {
+        @include font-style-primary(96px, 700);
+    }
+
+    .message{
+        @include font-style-primary(18px, 500);
+    }
+
+    .retour{
+        @include font-style(14px, 500);
+    }
 }

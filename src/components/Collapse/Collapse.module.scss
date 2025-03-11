@@ -44,22 +44,6 @@
   }
 }
 
-.small {
-  width: 335px;
-
-  .topBar {
-    height: 30px;
-  }
-
-  .title {
-    @include font-style-secondary(13px, 700);
-  }
-
-  .content {
-    @include font-style(12px, 400);
-  }
-}
-
 .icone {
   font-size: 24px;
   color: white;
@@ -85,3 +69,27 @@
   transform: scaleY(1);
 }
 
+/**Media queries**/
+@media (max-width: 767.98px){
+  
+  .large, 
+  .medium {
+    width: 100%;
+  
+    .topBar {
+      height: 30px;
+    }
+  
+    .title {
+      @include font-style-secondary(13px, 700);
+    }
+  
+    .content {
+      @include font-style(12px, 400);
+    }
+  }
+
+  .icone {
+    font-size: 16px;
+  }
+}

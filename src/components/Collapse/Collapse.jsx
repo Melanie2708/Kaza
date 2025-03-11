@@ -19,6 +19,6 @@ function Collapse({ title, content, size }) {
   export default Collapse;
   
   Collapse.propTypes = {
-    size: PropTypes.oneOf(["small", "medium", "large"]),
+    size: PropTypes.oneOf(["medium", "large"]),
   };
   

@@ -25,7 +25,8 @@
   .banner{
     max-width: 767.98px;
     height: 111px;
-    padding-left: 20px
+    padding-left: 20px;
+    border-radius: 10px;
   }
   .texte{
     @include font-style-secondary(24px, 700);
